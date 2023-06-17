@@ -4,7 +4,7 @@ import {
   signInWithEmailAndPassword,
   signOut,
 } from 'firebase/auth';
-import { ErrorType, LoginRequestType, LoginType, AuthType } from '../../types';
+import { ErrorType, LoginType, AuthType } from '../../types';
 import { getApp } from 'firebase/app';
 
 export const register = (data: AuthType) => {
@@ -23,7 +23,7 @@ export const register = (data: AuthType) => {
   });
 };
 
-export const login = (data: LoginRequestType) => {
+export const login = (data: AuthType) => {
   return new Promise<LoginType | ErrorType>((resolve) => {
     const auth = getAuth(getApp());
     signInWithEmailAndPassword(auth, data.email, data.password).then(
