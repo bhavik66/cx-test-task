@@ -132,7 +132,13 @@ export function updateBank(request: UpdateBankRequest) {
   return new Promise<boolean | ErrorType>((resolve) => {
     const db = getFirestore(getApp());
     const bankRef = doc(db, 'bank', request.bankId);
-    updateDoc(bankRef, request.changes)
+    const dataWithSearchField = {
+      ...request.changes,
+      searchField: Object.values(request.changes).map((x: string) =>
+        typeof x === 'string' ? x.toLowerCase() : x
+      ),
+    };
+    updateDoc(bankRef, dataWithSearchField)
       .then(() => {
         resolve(true);
       })
