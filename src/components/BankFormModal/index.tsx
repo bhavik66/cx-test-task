@@ -92,10 +92,6 @@ const BankFormModal: React.FC<BankFormModalProps> = ({
           branchAddress: bankBeingEdited.branchAddress,
           contactNumber: bankBeingEdited.contactNumber,
         };
-      } else {
-        console.error(
-          'This situation should not occur where there is no object bankBeingEdited while editing a bank.'
-        );
       }
     } else {
       if (bankBeingAdded) {
