@@ -1,0 +1,84 @@
+{
+  "globalErrors": {
+    "apiCallFailed": "We are facing some technical difficulties, please try later.",
+    "errorBadApiResponse": "We are facing some technical difficulties, please try later.",
+    "errorGeneral": "Oops! Something went wrong, please try again after sometime.",
+    "internetDisconnected": "No Internet Connection"
+  },
+  "pageNotFound": {
+    "404Error": "404. That's an error.",
+    "message": "The page your are looking for does not exist. That’s all we know.",
+    "goToHome": "Go to home page"
+  },
+  "commonButtonLabels": {
+    "reload": "Reload"
+  },
+  "authPage": {
+    "label": {
+      "email": "Email",
+      "password": "Password",
+      "register": "Register",
+      "login": "Login",
+      "gotoLogin": "Go to Login",
+      "gotoRegister": "Go to Register",
+      "logout": "Logout"
+    },
+    "errors": {
+      "invalidEmail": "Invalid Email",
+      "requireEmail": "Email is required",
+      "requirePassword": "Password is required",
+      "minPassword": "Password must be at least 6 characters",
+      "somethingWentWrong": "Something Went Wrong"
+    },
+    "success": {
+      "registerSuccess": "Register successfully"
+    }
+  },
+  "banksPage": {
+    "title": "Banks",
+    "tabs": {
+      "banks": "Banks"
+    },
+    "label": {
+      "bankDetails": "Bank Details",
+      "bankId": "Bank id",
+      "bankName": "Bank name",
+      "accountNumber": "Account number",
+      "ifscCode": "Ifsc code",
+      "branchAddress": "Branch address",
+      "contactNumber": "Contact number",
+      "search": "Search"
+    },
+    "errors": {
+      "title": "Error",
+      "BankAlreadyExistsWhileAdding": "A Bank with this id already exists!",
+      "requireBankName": "Bank name is required",
+      "requireAccountNumber": "Account number is required",
+      "requireIfscCode": "Ifsc code is required",
+      "requireBranchAddress": "Branch address is required",
+      "requireContactNumber": "Contact number is required"
+    },
+    "form": {
+      "close": "Close",
+      "closeAndAddAnother": "Close and Add Another",
+      "goBackAndRetry": "Go back and Retry",
+      "cancel": "Cancel",
+      "yesDeleteNow": "Yes, Delete Now",
+      "update": "Update",
+      "edit": "Edit",
+      "delete": "Delete",
+      "addBank": "Add Bank",
+      "editBankInfo": "Edit Bank info",
+      "addNewBank": "Add New Bank",
+      "deleteBankConfirmation": "Are you sure you want to delete this Bank?",
+      "deleteBankConfirmationMessage": "Clicking on 'Yes, delete now' will delete the Bank permanently."
+    },
+    "success": {
+      "addBank": "Bank added successfully",
+      "addBankDetails": "Bank has been successfully created",
+      "updateBank": "Bank updated successfully",
+      "updateBankDetails": "Bank details have been successfully updated",
+      "deleteBank": "Bank deleted successfully"
+    }
+  }
+}
