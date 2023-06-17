@@ -1,13 +1,11 @@
 import {
   addDoc,
-  and,
   collection,
   deleteDoc,
   doc,
   getDoc,
   getDocs,
   getFirestore,
-  or,
   orderBy,
   query,
   updateDoc,
@@ -113,7 +111,9 @@ export function addBank(bankToBeAdded: AddBankRequest) {
     const bankCollectionRef = collection(db, 'bank');
     const dataWithSearchField = {
       ...bankToBeAdded,
-      searchField: Object.values(bankToBeAdded).join(' ').toLowerCase(),
+      searchField: Object.values(bankToBeAdded).map((x: string) =>
+        typeof x === 'string' ? x.toLowerCase() : x
+      ),
     };
     addDoc(bankCollectionRef, dataWithSearchField)
       .then(() => {
